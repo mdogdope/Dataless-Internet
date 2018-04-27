@@ -1,9 +1,14 @@
 import imaplib
 import email
 
+login = open("login.txt", "r").read()
+
+EMAILADDR = login[:login.find(":")]
+PASSWD = login[login.find(":")+1:]
+
 ORG_EMAIL   = "@gmail.com"
-FROM_EMAIL  = "" + ORG_EMAIL
-FROM_PWD    = ""
+FROM_EMAIL  = EMAILADDR + ORG_EMAIL
+FROM_PWD    = PASSWD
 SMTP_SERVER = "imap.gmail.com"
 SMTP_PORT   = 993
 
