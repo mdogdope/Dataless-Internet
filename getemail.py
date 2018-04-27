@@ -2,8 +2,8 @@ import imaplib
 import email
 
 ORG_EMAIL   = "@gmail.com"
-FROM_EMAIL  = "mdogdataless" + ORG_EMAIL
-FROM_PWD    = "mike6008697"
+FROM_EMAIL  = "" + ORG_EMAIL
+FROM_PWD    = ""
 SMTP_SERVER = "imap.gmail.com"
 SMTP_PORT   = 993
 
